@@ -1,0 +1,58 @@
+.landing {
+    height: 100vh;
+    //   background-color: #eef4ef;
+    background: linear-gradient(180deg,#EEF3F5,#FFFFFF);
+    position: relative;
+    .heading {
+      z-index: 1;
+      position: absolute;
+      top: 21rem;
+      left: 7rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      h1 {
+        font-size: 5rem;
+        width: 52rem;
+        letter-spacing: 0.2rem;
+        line-height: 6.5rem;
+        span {
+          color: #87c332;
+        }
+      }
+      .buttons {
+        display: flex;
+        gap: 1.5rem;
+        .nearest {
+          background-color: #87c332;
+          color: #ffffff;
+          font-size: 1.8rem;
+          box-shadow: 0px 3px 6px #00000029;
+          border-radius: 5px;
+          padding: 1.3rem 1.5rem;
+          &:hover {
+            background-color: #ffffff;
+            color: #262828;
+          }
+        }
+        .dealer {
+          background-color: #ffffff;
+          padding: 1.3rem 3rem;
+          font-size: 1.8rem;
+          box-shadow: 0px 3px 6px #00000029;
+          border-radius: 5px;
+          &:hover {
+            background-color: #87c332;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .land-image {
+      position: absolute;
+      top: 5rem;
+      right: 10rem;
+      width: 70rem;
+    }
+  }
+  
