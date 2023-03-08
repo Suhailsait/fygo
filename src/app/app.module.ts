@@ -9,7 +9,6 @@ import { HeaderComponent } from './header/header.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { MapComponent } from './map/map.component';
 import { StartedComponent } from './started/started.component';
-import { MappingComponent } from './mapping/mapping.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { MappingComponent } from './mapping/mapping.component';
     HeaderComponent,
     CompaniesComponent,
     MapComponent,
-    StartedComponent,
-    MappingComponent
+    StartedComponent
   ],
   imports: [
     BrowserModule,
