@@ -1,58 +1,92 @@
 .landing {
-    height: 100vh;
-    //   background-color: #eef4ef;
-    background: linear-gradient(180deg,#EEF3F5,#FFFFFF);
-    position: relative;
-    .heading {
-      z-index: 1;
-      position: absolute;
-      top: 21rem;
-      left: 7rem;
-      display: flex;
-      flex-direction: column;
-      gap: 5rem;
+  height: 100vh;
+  //   background-color: #eef4ef;
+  background: linear-gradient(180deg, #f4fafc, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .headings {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    font-family: "Quicksand", sans-serif;
+    .main-head {
       h1 {
-        font-size: 5rem;
+        font-size: 5.2rem;
+        font-weight: 200;
         width: 52rem;
         letter-spacing: 0.2rem;
         line-height: 6.5rem;
         span {
-          color: #87c332;
-        }
-      }
-      .buttons {
-        display: flex;
-        gap: 1.5rem;
-        .nearest {
-          background-color: #87c332;
-          color: #ffffff;
-          font-size: 1.8rem;
-          box-shadow: 0px 3px 6px #00000029;
-          border-radius: 5px;
-          padding: 1.3rem 1.5rem;
-          &:hover {
-            background-color: #ffffff;
-            color: #262828;
-          }
-        }
-        .dealer {
-          background-color: #ffffff;
-          padding: 1.3rem 3rem;
-          font-size: 1.8rem;
-          box-shadow: 0px 3px 6px #00000029;
-          border-radius: 5px;
-          &:hover {
-            background-color: #87c332;
-            color: #ffffff;
-          }
+          font-weight: 700;
+          color: #00bfff;
         }
       }
     }
-    .land-image {
+    .fygo-rotate {
       position: absolute;
-      top: 5rem;
-      right: 10rem;
-      width: 70rem;
+      bottom: 5rem;
+      left: 2rem;
+      transform: rotate(270deg);
+      width: 7rem;
+      h1 {
+        font-size: 8rem;
+        font-weight: 300;
+        letter-spacing: 1rem;
+        -webkit-text-stroke:0.1rem #00BFFF;
+        color: white;
+      }
+    }
+    .dot-image{
+      position: absolute;
+      top: 0;
+      left: -7rem;
+      img{
+        width: 23rem;
+        opacity: 0.2;
+      }
+    }
+    .buttons {
+      display: flex;
+      gap: 1.5rem;
+      font-family: "Quicksand", sans-serif;
+      .nearest {
+        background-color: #00bfff;
+        color: #ffffff;
+        font-size: 1.8rem;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+        width: 20rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          background-color: #ffffff;
+          color: #262828;
+        }
+      }
+      .dealer {
+        background-color: #ffffff;
+        width: 19.4rem;
+        height: 4.7rem;
+        font-size: 1.9rem;
+        font-weight: 500;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          background-color: #00bfff;
+          color: #ffffff;
+        }
+      }
     }
   }
-  
+  .land-image {
+    width: 75rem;
+    height: 55rem;
+  }
+}
